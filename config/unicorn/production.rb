@@ -1,7 +1,7 @@
 worker_processes  2   # 1
  working_directory "/var/www/cdp_web_web_aws_deploy_task/current"    # 2
- stderr_path "/var/www/cdp_web_web_aws_deploy_task/shared/log/unicorn.stderr.log"    # 3変更
- stdout_path "/var/www/cdp_web_web_aws_deploy_task/shared/log/unicorn.stdout.log"    # 4変更
+ stderr_path "log/unicorn.stderr.log""    # 3変更
+ stdout_path "log/unicorn.stdout.log"    # 4変更
  timeout 30    # 5
  listen "/var/www/cdp_web_web_aws_deploy_task/current/tmp/sockets/unicorn.sock"    # 6
  pid '/var/www/cdp_web_web_aws_deploy_task/current/tmp/pids/unicorn.pid'   # 7
