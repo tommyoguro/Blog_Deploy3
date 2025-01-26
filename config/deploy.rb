@@ -9,11 +9,11 @@ set :keep_releases, 5 #追加
 set :rbenv_ruby, '3.3.0'  #追加
 set :log_level, :info #追加
 
-set :bundle_without, %w{test}.join(':')
-set :rbenv_version, '3.3.0'
-append :linked_files, 'config/secrets.yml'
+set :bundle_without, %w{development test}.join(':')#develpment追加
+#set :rbenv_version, '3.3.0'#コメントアウト
+# append :linked_files, 'config/secrets.yml'#コメントアウト
 
-after 'deploy:published', 'deploy:seed' #追加
+#after 'deploy:published', 'deploy:seed' #追加コメントアウト
 after 'deploy:finished', 'deploy:restart'  #追加
 
 namespace :deploy do
