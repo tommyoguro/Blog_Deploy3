@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Thumbnail:</strong>
-  <%= image_tag @blog.thumbnail.variant(resize_to_limit: [800, 800]) %>
+  <strong>image:</strong> #thumbnailをimageへ変更
+  <%= image_tag @blog.image.variant(resize_to_limit: [800, 800]) %>#thumbnailをimageへ変更
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
