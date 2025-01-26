@@ -3,7 +3,7 @@ lock "~> 3.19.2"
 
 set :application, "cdp_web_web_aws_deploy_task"
 set :repo_url, "https://github.com/tommyoguro/Blog_Deploy3.git"
-set :linked_files, %w{config/secrets.yml} #追加
+set :linked_files, %w{config/secrets.yml .env} #追加
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads} #追加
 set :keep_releases, 5 #追加
 set :rbenv_ruby, '3.3.0'  #追加

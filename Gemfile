@@ -32,6 +32,10 @@ gem 'unicorn'  # 追記
 
 gem 'image_processing', '~> 1.2'#追記
 
+gem 'aws-sdk-s3', require: false #追記
+gem 'dotenv-rails'#追記
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
