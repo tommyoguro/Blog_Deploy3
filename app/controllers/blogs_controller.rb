@@ -64,6 +64,6 @@ class BlogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def blog_params
-      params.require(:blog).permit(:title, :content, :image)#thumbnailからimageに変更
+      params.require(:blog).permit(:title, :content, :thumbnail)#imageからthumbnailに再度変更
     end
 end
