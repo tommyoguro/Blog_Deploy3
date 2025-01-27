@@ -12,7 +12,7 @@
 
 <p>
   <strong>thumbnail:</strong> #imageからthumbnailへ再度変更
-  <%= thumbnail_tag @blog.thumbnail.variant(resize_to_limit: [800, 800]) %>#imageからthumbnailへ再度変更
+  <%= image_tag @blog.thumbnail.variant(resize_to_limit: [800, 800]) if @blog.thumbnail.attached? %> #imageからthumbnailへ再度変更
 </p>
 
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
