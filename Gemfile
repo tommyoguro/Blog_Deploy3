@@ -30,8 +30,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'unicorn'  # 追記
 
-gem 'image_processing', '~> 1.2'#追記
-
 gem 'aws-sdk-s3', require: false #追記
 gem 'dotenv-rails'#追記
 
